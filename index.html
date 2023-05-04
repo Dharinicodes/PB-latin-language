@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phineas and Ferb Latin Language translator</title>
-</head>
-<body>
+    <style>
+      textarea {
+        width: 80%;
+        height: 10vh;
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      #output {
+        border: 1px solid black;
+        height: 10vh;
+        width: 80%;
+        margin: 1rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Phineas & Ferb Latin translation</h1>
-</body>
+
+    <textarea
+      id="txt-input"
+      placeholder="put the text you want to translate here"
+    ></textarea>
+    <button id="btn-translate">Translate</button>
+    <div>Your Output will come here 👇🏽</div>
+    <div id="output"></div>
+    <script src="app.js" type="text/js"></script>
+  </body>
 </html>
